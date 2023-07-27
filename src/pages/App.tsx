@@ -13,7 +13,6 @@ import RemoveLiquidity from './RemoveLiquidity'
 import { RedirectOldRemoveLiquidityPathStructure } from './RemoveLiquidity/redirects'
 import Swap from './Swap'
 import { RedirectPathToSwapOnly, RedirectToSwap } from './Swap/redirects'
-import Marquee from '../components/Marquee'
 
 const AppWrapper = styled.div`
   display: flex;
@@ -50,24 +49,7 @@ const BodyWrapper = styled.div`
   z-index: 1;
 `
 
-const MarqueeWrapper = styled.div`
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  padding: 16px;
-  align-items: center;
-  flex: 1;
-  overflow-y: auto;
-  overflow-x: hidden;
-  z-index: 10;
 
-  ${({ theme }) => theme.mediaWidth.upToSmall`
-    padding: 16px;
-    padding-top: 2rem;
-  `};
-
-  z-index: 1;
-`
 
 const Marginer = styled.div`
   margin-top: 5rem;
@@ -111,22 +93,19 @@ export default function App() {
                 <Route component={RedirectPathToSwapOnly} />
               </Switch>
             </Web3ReactManager>
-            <MarqueeWrapper>
-              <Marquee />
-            </MarqueeWrapper>
             <Marginer />
           </BodyWrapper>
 
           <Footer>
-            “That which is not good for the{' '}
+            AcxynSwap is brought to you proudly{' '}
             <span role="img" aria-label="bee">
-              🐝
+          
             </span>
-            -hive cannot be good for the{' '}
+            from Kuala Lumpar, Malaysia{' '}
             <span role="img" aria-label="bee">
-              🐝
+              
             </span>
-            .” —Marcus Aurelius
+            
           </Footer>
         </AppWrapper>
       </HashRouter>

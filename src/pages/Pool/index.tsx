@@ -68,7 +68,7 @@ const EmptyProposals = styled.div`
   align-items: center;
 `
 
-export default function Pool() {
+export default function IPPool() {
   const { account, chainId } = useActiveWeb3React()
 
   // fetch the user's balances of all tracked DXSwap LP tokens
@@ -112,7 +112,7 @@ export default function Pool() {
               <ButtonRow>
                 <ResponsiveButtonSecondary as={Link} padding="8px 14px" to="/create">
                   <Text fontWeight={700} fontSize={12} lineHeight="15px">
-                    CREATE PAIR
+                    CREATE IP PAIR
                   </Text>
                 </ResponsiveButtonSecondary>
                 <ResponsiveButtonPrimary id="join-pool-button" as={Link} padding="8px 14px" to="/add/ETH">
@@ -157,7 +157,7 @@ export default function Pool() {
               lineHeight="17px"
               marginTop="32px"
             >
-              Dont see a pool you joined?{' '}
+              Dont see the vault you joined?{' '}
               <StyledInternalLink color="text1" id="import-pool-link" to="/find">
                 Import it.
               </StyledInternalLink>
@@ -176,10 +176,10 @@ export default function Pool() {
               <RowBetween>
                 <TYPE.body fontWeight="500" fontSize="12px" lineHeight="20px" letterSpacing="-0.4px">
                   Liquidity providers earn a swap fee (0.25% by default) on all trades proportional to their share of
-                  the pool.
-                  <br /> Fees are added to the pool, accrue in real time and can be claimed by withdrawing your
+                  the vault.
+                  <br /> Fees are added to the vault, accrue in real time and can be claimed by withdrawing your
                   liquidity.
-                  <br /> Another 0.05% is converted to Honey and sent to the common pool periodically.
+                  <br /> Another 0.05% is converted to ACX and sent to the incubator pool periodically.
                 </TYPE.body>
               </RowBetween>
               {/*<RowBetween>*/}

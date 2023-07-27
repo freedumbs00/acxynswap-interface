@@ -140,7 +140,7 @@ export default function PoolFinder() {
                 <LightCard padding="20px" marginY="16px">
                   <AutoColumn gap="sm" justify="center">
                     <TYPE.body color="text4" fontWeight="500" fontSize="15px" lineHeight="19px" textAlign="center">
-                      You don’t have liquidity in this pool yet.
+                      You don’t have liquidity in this vault yet.
                     </TYPE.body>
                   </AutoColumn>
                 </LightCard>
@@ -154,12 +154,12 @@ export default function PoolFinder() {
               <LightCard padding="20px" marginY="16px">
                 <AutoColumn gap="sm" justify="center">
                   <TYPE.body color="text4" fontWeight="500" fontSize="15px" lineHeight="19px" textAlign="center">
-                    No pool found.
+                    No vautl found.
                   </TYPE.body>
                 </AutoColumn>
               </LightCard>
               <Link to={`/add/${currencyId(currency0)}/${currencyId(currency1)}`}>
-                <ButtonPrimary>Create pool</ButtonPrimary>
+                <ButtonPrimary>Create vault</ButtonPrimary>
               </Link>
             </>
           ) : pairState === PairState.INVALID ? (
@@ -186,7 +186,7 @@ export default function PoolFinder() {
 
         {hasPosition && (
           <Link to="/pool">
-            <ButtonPrimary>Manage this pool</ButtonPrimary>
+            <ButtonPrimary>Manage this vault</ButtonPrimary>
           </Link>
         )}
       </AutoColumn>

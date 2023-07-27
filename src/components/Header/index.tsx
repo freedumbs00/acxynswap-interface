@@ -3,10 +3,10 @@ import { NavLink, withRouter } from 'react-router-dom'
 
 import styled from 'styled-components'
 
-import Logo from '../../assets/svg/logo.svg'
-import LogoDark from '../../assets/svg/logo_white.svg'
-import Wordmark from '../../assets/svg/wordmark.svg'
-import WordmarkDark from '../../assets/svg/wordmark_white.svg'
+import Logo from '../../assets/svg/acxyn_city.svg'
+import LogoDark from '../../assets/svg/acxyn_city.svg'
+import Wordmark from '../../assets/svg/acxyn_city.svg'
+import WordmarkDark from '../../assets/svg/acxyn_city.svg'
 import { useActiveWeb3React } from '../../hooks'
 import { useDarkModeManager } from '../../state/user/hooks'
 import { useNativeCurrencyBalances } from '../../state/wallet/hooks'
@@ -166,7 +166,7 @@ const TitleText = styled(Row)`
 
 const DXswapIcon = styled.div`
   img {
-    margin-left: 5px;
+    margin-left: 25px;
     margin-bottom: -5px;
   }
 `
@@ -257,18 +257,18 @@ function Header({ history }: { history: any }) {
             {t('pool')}
           </StyledNavLink>
           <StyledExternalLink id={`stake-nav-link`} href={`https://1hive.org/`}>
-            Governance{' '}
+            Acxyn Governance{' '}
             <Text ml="4px" fontSize="11px">
               ↗
             </Text>
           </StyledExternalLink>
-          <StyledExternalLink id={`stake-nav-link`} href={`https://1hive.io/`}>
-            Farms{' '}
+          <StyledExternalLink id={`stake-nav-link`} href={`https://seedle.finance/home`}>
+            Vaults{' '}
             <Text ml="4px" fontSize="11px">
               ↗
             </Text>
           </StyledExternalLink>
-          <StyledExternalLink id={`stake-nav-link`} href={`https://info.honeyswap.org/`}>
+          <StyledExternalLink id={`stake-nav-link`} href={`https://defillama.com`}>
             Charts{' '}
             <Text ml="4px" fontSize="11px">
               ↗
